@@ -12,4 +12,11 @@ let snake;
 (function setup() {
     snake = new Snake();
     snake.draw();
+
+    window.setInterval(() => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height)
+        snake.update();
+        snake.draw();
+    }, 250)
+
 }());
