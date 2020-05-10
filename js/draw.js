@@ -22,6 +22,7 @@ let snake;
             fruit.pickLocation();
 
         }
+        snake.checkCollision()
 
     }, 250)
 
