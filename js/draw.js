@@ -19,7 +19,8 @@ let snake;
         snake.draw();
 
         if (snake.eat(fruit)) {
-            console.log('EATNG')
+            fruit.pickLocation();
+
         }
 
     }, 250)
