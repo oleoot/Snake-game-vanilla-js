@@ -1,17 +1,17 @@
-const canvas = document.querySelector('.canvas');
-const ctx = canvas.getContext('2d');
+const canvas = document.querySelector(".canvas");
+const ctx = canvas.getContext("2d");
 const scale = 10;
 const rows = canvas.height / scale;
 const columns = canvas.width / scale;
-
-
-
 let snake;
 
 
 (function setup() {
     snake = new Snake();
-    snake.draw();
+    fruit = new Fruit();
+    fruit.pickLocation();
+
+
 
     window.setInterval(() => {
         ctx.clearRect(0, 0, canvas.width, canvas.height)
