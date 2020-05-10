@@ -2,6 +2,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
 }
 body{
 width: 100%;
@@ -9,7 +10,13 @@ height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
+background: #ffbb00;
 }
 .canvas{
 background: #3e3e3e;
+}
+p{
+text-align: center;
+font-size: 40px;
+margin-bottom: 30px;
 }

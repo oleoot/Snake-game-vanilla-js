@@ -22,8 +22,9 @@ let snake;
             fruit.pickLocation();
 
         }
-        snake.checkCollision()
 
+        snake.checkCollision()
+        document.querySelector('.score').innerText = snake.total
     }, 250)
 
 }());
